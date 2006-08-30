@@ -1,7 +1,7 @@
 category: Devel
 requires: cygwin libintl3
 sdesc: "Rewrite of NASM assembler"
-ldesc: "Yasm is a complete rewrite of the NASM assembler under the "new" BSD
+ldesc: "Yasm is a complete rewrite of the NASM assembler under the new BSD
 License. Yasm currently supports the x86 and AMD64 instruction sets,
 accepts NASM and GAS assembler syntaxes, outputs binary, ELF32, ELF64,
 COFF, Win32, and Win64 object formats, and generates source debugging
