@@ -7,21 +7,21 @@ COFF, Win32, and Win64 object formats, and generates source debugging
 information in STABS, DWARF 2, and CodeView 8 formats.
 
 Runtime requirements:
-  cygwin-1.5.21-1
-  libintl3-0.14.5-1
+  cygwin-1.5.24-1
+  libintl8-0.15-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.21-1
-  autoconf2.5-2.59-2
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
   automake1.9-1.9.6-1
   binutils-20050610-1
   bison-2.3-1
-  cygport-0.2.4-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
+  cygport-0.2.11-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
   make-3.81-1
-  sed-4.1.5-1
+  sed-4.1.5-2
 
 Canonical website:
   http://www.tortall.net/projects/yasm/
@@ -32,36 +32,40 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack yasm-0.5.0-X-src.tar.bz2
+  unpack yasm-0.6.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./yasm-0.5.0-X.cygport all
+  cygport ./yasm-0.6.0-X.cygport all
 
 This will create:
-  /usr/src/libyasm-devel-0.5.0-X.tar.bz2
-  /usr/src/yasm-0.5.0-X-src.tar.bz2
-  /usr/src/yasm-0.5.0-X.tar.bz2
+  /usr/src/libyasm-devel-0.6.0-X.tar.bz2
+  /usr/src/yasm-0.6.0-X-src.tar.bz2
+  /usr/src/yasm-0.6.0-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
+(yasm)
   /usr/bin/yasm.exe
-  /usr/share/doc/Cygwin/yasm-0.5.0.README
-  /usr/share/doc/yasm-0.5.0/ABOUT-NLS
-  /usr/share/doc/yasm-0.5.0/AUTHORS
-  /usr/share/doc/yasm-0.5.0/Artistic.txt
-  /usr/share/doc/yasm-0.5.0/BSD.txt
-  /usr/share/doc/yasm-0.5.0/COPYING
-  /usr/share/doc/yasm-0.5.0/GNU_GPL-2.0
-  /usr/share/doc/yasm-0.5.0/GNU_LGPL-2.0
-  /usr/share/doc/yasm-0.5.0/INSTALL
+  /usr/share/doc/Cygwin/yasm-0.6.0.README
+  /usr/share/doc/yasm-0.6.0/ABOUT-NLS
+  /usr/share/doc/yasm-0.6.0/AUTHORS
+  /usr/share/doc/yasm-0.6.0/Artistic.txt
+  /usr/share/doc/yasm-0.6.0/BSD.txt
+  /usr/share/doc/yasm-0.6.0/COPYING
+  /usr/share/doc/yasm-0.6.0/GNU_GPL-2.0
+  /usr/share/doc/yasm-0.6.0/GNU_LGPL-2.0
+  /usr/share/doc/yasm-0.6.0/INSTALL
   /usr/share/man/man1/yasm.1.gz
   /usr/share/man/man7/yasm_arch.7.gz
+  /usr/share/man/man7/yasm_dbgfmts.7.gz
+  /usr/share/man/man7/yasm_objfmts.7.gz
+  /usr/share/man/man7/yasm_parsers.7.gz
 
-Files included in the development package:
-
+(libyasm-devel)
+  /usr/include/libyasm-stdint.h
   /usr/include/libyasm.h
   /usr/include/libyasm/arch.h
   /usr/include/libyasm/assocdat.h
@@ -78,12 +82,12 @@ Files included in the development package:
   /usr/include/libyasm/floatnum.h
   /usr/include/libyasm/hamt.h
   /usr/include/libyasm/intnum.h
-  /usr/include/libyasm/linemgr.h
+  /usr/include/libyasm/inttree.h
+  /usr/include/libyasm/linemap.h
   /usr/include/libyasm/listfmt.h
   /usr/include/libyasm/md5.h
   /usr/include/libyasm/module.h
   /usr/include/libyasm/objfmt.h
-  /usr/include/libyasm/optimizer.h
   /usr/include/libyasm/parser.h
   /usr/include/libyasm/phash.h
   /usr/include/libyasm/preproc.h
@@ -96,6 +100,9 @@ Files included in the development package:
 ------------------
 
 Port Notes:
+
+----- version 0.6.0-1 -----
+Version bump.
 
 ----- version 0.5.0-1 -----
 Initial release for Cygwin.
