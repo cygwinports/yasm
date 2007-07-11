@@ -17,7 +17,8 @@ Build requirements:
   automake1.9-1.9.6-1
   binutils-20050610-1
   bison-2.3-1
-  cygport-0.2.11-1
+  cygport-0.3.1-1
+  flex-2.5.33-2
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   make-3.81-1
@@ -32,16 +33,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack yasm-0.6.0-X-src.tar.bz2
+  unpack yasm-0.6.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./yasm-0.6.0-X.cygport all
+  cygport ./yasm-0.6.1-X.cygport all
 
 This will create:
-  /usr/src/libyasm-devel-0.6.0-X.tar.bz2
-  /usr/src/yasm-0.6.0-X-src.tar.bz2
-  /usr/src/yasm-0.6.0-X.tar.bz2
+  /usr/src/yasm-0.6.1-X-src.tar.bz2
+  /usr/src/yasm-0.6.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -49,22 +49,6 @@ Files included in the binary packages:
 
 (yasm)
   /usr/bin/yasm.exe
-  /usr/share/doc/Cygwin/yasm-0.6.0.README
-  /usr/share/doc/yasm-0.6.0/ABOUT-NLS
-  /usr/share/doc/yasm-0.6.0/AUTHORS
-  /usr/share/doc/yasm-0.6.0/Artistic.txt
-  /usr/share/doc/yasm-0.6.0/BSD.txt
-  /usr/share/doc/yasm-0.6.0/COPYING
-  /usr/share/doc/yasm-0.6.0/GNU_GPL-2.0
-  /usr/share/doc/yasm-0.6.0/GNU_LGPL-2.0
-  /usr/share/doc/yasm-0.6.0/INSTALL
-  /usr/share/man/man1/yasm.1.gz
-  /usr/share/man/man7/yasm_arch.7.gz
-  /usr/share/man/man7/yasm_dbgfmts.7.gz
-  /usr/share/man/man7/yasm_objfmts.7.gz
-  /usr/share/man/man7/yasm_parsers.7.gz
-
-(libyasm-devel)
   /usr/include/libyasm-stdint.h
   /usr/include/libyasm.h
   /usr/include/libyasm/arch.h
@@ -96,10 +80,27 @@ Files included in the binary packages:
   /usr/include/libyasm/valparam.h
   /usr/include/libyasm/value.h
   /usr/lib/libyasm.a
+  /usr/share/doc/Cygwin/yasm-0.6.1.README
+  /usr/share/doc/yasm-0.6.1/ABOUT-NLS
+  /usr/share/doc/yasm-0.6.1/AUTHORS
+  /usr/share/doc/yasm-0.6.1/Artistic.txt
+  /usr/share/doc/yasm-0.6.1/BSD.txt
+  /usr/share/doc/yasm-0.6.1/COPYING
+  /usr/share/doc/yasm-0.6.1/GNU_GPL-2.0
+  /usr/share/doc/yasm-0.6.1/GNU_LGPL-2.0
+  /usr/share/doc/yasm-0.6.1/INSTALL
+  /usr/share/man/man1/yasm.1.gz
+  /usr/share/man/man7/yasm_arch.7.gz
+  /usr/share/man/man7/yasm_dbgfmts.7.gz
+  /usr/share/man/man7/yasm_objfmts.7.gz
+  /usr/share/man/man7/yasm_parsers.7.gz
 
 ------------------
 
 Port Notes:
+
+----- version 0.6.1-1 -----
+Version bump.
 
 ----- version 0.6.0-1 -----
 Version bump.
