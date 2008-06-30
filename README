@@ -7,17 +7,16 @@ COFF, Win32, and Win64 object formats, and generates source debugging
 information in STABS, DWARF 2, and CodeView 8 formats.
 
 Runtime requirements:
-  cygwin-1.5.24-1
+  cygwin-1.5.25-15
   libintl8-0.15-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
-  automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.3.5-1
-  gawk-3.1.5-4
+  automake1.10-1.10.1-1
+  binutils-20080523-1
+  cygport-0.3.11-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
   make-3.81-1
   sed-4.1.5-2
@@ -31,15 +30,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack yasm-0.6.2-X-src.tar.bz2
+  unpack yasm-0.7.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./yasm-0.6.2-X.cygport all
+  cygport ./yasm-0.7.1-X.cygport all
 
 This will create:
-  /usr/src/yasm-0.6.2-X-src.tar.bz2
-  /usr/src/yasm-0.6.2-X.tar.bz2
+  /usr/src/yasm-0.7.1-X-src.tar.bz2
+  /usr/src/yasm-0.7.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -51,18 +50,17 @@ Files included in the binary packages:
   /usr/include/libyasm.h
   /usr/include/libyasm/arch.h
   /usr/include/libyasm/assocdat.h
-  /usr/include/libyasm/bc-int.h
   /usr/include/libyasm/bitvect.h
   /usr/include/libyasm/bytecode.h
   /usr/include/libyasm/compat-queue.h
   /usr/include/libyasm/coretype.h
   /usr/include/libyasm/dbgfmt.h
   /usr/include/libyasm/errwarn.h
-  /usr/include/libyasm/expr-int.h
   /usr/include/libyasm/expr.h
   /usr/include/libyasm/file.h
   /usr/include/libyasm/floatnum.h
   /usr/include/libyasm/hamt.h
+  /usr/include/libyasm/insn.h
   /usr/include/libyasm/intnum.h
   /usr/include/libyasm/inttree.h
   /usr/include/libyasm/linemap.h
@@ -78,15 +76,14 @@ Files included in the binary packages:
   /usr/include/libyasm/valparam.h
   /usr/include/libyasm/value.h
   /usr/lib/libyasm.a
-  /usr/share/doc/Cygwin/yasm-0.6.2.README
-  /usr/share/doc/yasm-0.6.2/ABOUT-NLS
-  /usr/share/doc/yasm-0.6.2/AUTHORS
-  /usr/share/doc/yasm-0.6.2/Artistic.txt
-  /usr/share/doc/yasm-0.6.2/BSD.txt
-  /usr/share/doc/yasm-0.6.2/COPYING
-  /usr/share/doc/yasm-0.6.2/GNU_GPL-2.0
-  /usr/share/doc/yasm-0.6.2/GNU_LGPL-2.0
-  /usr/share/doc/yasm-0.6.2/INSTALL
+  /usr/share/doc/yasm-0.7.1/ABOUT-NLS
+  /usr/share/doc/yasm-0.7.1/AUTHORS
+  /usr/share/doc/yasm-0.7.1/Artistic.txt
+  /usr/share/doc/yasm-0.7.1/BSD.txt
+  /usr/share/doc/yasm-0.7.1/COPYING
+  /usr/share/doc/yasm-0.7.1/GNU_GPL-2.0
+  /usr/share/doc/yasm-0.7.1/GNU_LGPL-2.0
+  /usr/share/doc/yasm-0.7.1/INSTALL
   /usr/share/man/man1/yasm.1.gz
   /usr/share/man/man7/yasm_arch.7.gz
   /usr/share/man/man7/yasm_dbgfmts.7.gz
@@ -96,6 +93,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.7.1-1 -----
+Version bump.
 
 ----- version 0.6.2-1 -----
 Version bump.
