@@ -1,0 +1,22 @@
+--- origsrc/yasm-0.7.2/libyasm/file.h	2008-10-09 00:57:33.000000000 -0500
++++ src/yasm-0.7.2/libyasm/file.h	2008-10-13 10:35:39.302432300 -0500
+@@ -107,8 +107,7 @@
+  */
+ #ifndef yasm__splitpath
+ # if defined (_WIN32) || defined (WIN32) || defined (__MSDOS__) || \
+- defined (__DJGPP__) || defined (__OS2__) || defined (__CYGWIN__) || \
+- defined (__CYGWIN32__)
++ defined (__DJGPP__) || defined (__OS2__)
+ #  define yasm__splitpath(path, tail)   yasm__splitpath_win(path, tail)
+ # else
+ #  define yasm__splitpath(path, tail)   yasm__splitpath_unix(path, tail)
+@@ -159,8 +158,7 @@
+  */
+ #ifndef yasm__combpath
+ # if defined (_WIN32) || defined (WIN32) || defined (__MSDOS__) || \
+- defined (__DJGPP__) || defined (__OS2__) || defined (__CYGWIN__) || \
+- defined (__CYGWIN32__)
++ defined (__DJGPP__) || defined (__OS2__)
+ #  define yasm__combpath(from, to)      yasm__combpath_win(from, to)
+ # else
+ #  define yasm__combpath(from, to)      yasm__combpath_unix(from, to)

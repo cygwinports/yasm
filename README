@@ -8,14 +8,14 @@ information in STABS, DWARF 2, and CodeView 8 formats.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  libintl8-0.15-1
+  libintl8-0.17-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
+  autoconf2.5-2.63-1
   automake1.10-1.10.1-1
-  binutils-20080523-1
-  cygport-0.3.11-1
+  binutils-20080624-2
+  cygport-0.4.1-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   make-3.81-1
@@ -30,15 +30,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack yasm-0.7.1-X-src.tar.bz2
+  unpack yasm-0.7.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./yasm-0.7.1-X.cygport all
+  cygport ./yasm-0.7.2-X.cygport all
 
 This will create:
-  /usr/src/yasm-0.7.1-X-src.tar.bz2
-  /usr/src/yasm-0.7.1-X.tar.bz2
+  /usr/src/yasm-0.7.2-X-src.tar.bz2
+  /usr/src/yasm-0.7.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -76,14 +76,14 @@ Files included in the binary packages:
   /usr/include/libyasm/valparam.h
   /usr/include/libyasm/value.h
   /usr/lib/libyasm.a
-  /usr/share/doc/yasm-0.7.1/ABOUT-NLS
-  /usr/share/doc/yasm-0.7.1/AUTHORS
-  /usr/share/doc/yasm-0.7.1/Artistic.txt
-  /usr/share/doc/yasm-0.7.1/BSD.txt
-  /usr/share/doc/yasm-0.7.1/COPYING
-  /usr/share/doc/yasm-0.7.1/GNU_GPL-2.0
-  /usr/share/doc/yasm-0.7.1/GNU_LGPL-2.0
-  /usr/share/doc/yasm-0.7.1/INSTALL
+  /usr/share/doc/yasm-0.7.2/ABOUT-NLS
+  /usr/share/doc/yasm-0.7.2/AUTHORS
+  /usr/share/doc/yasm-0.7.2/Artistic.txt
+  /usr/share/doc/yasm-0.7.2/BSD.txt
+  /usr/share/doc/yasm-0.7.2/COPYING
+  /usr/share/doc/yasm-0.7.2/GNU_GPL-2.0
+  /usr/share/doc/yasm-0.7.2/GNU_LGPL-2.0
+  /usr/share/doc/yasm-0.7.2/INSTALL
   /usr/share/man/man1/yasm.1.gz
   /usr/share/man/man7/yasm_arch.7.gz
   /usr/share/man/man7/yasm_dbgfmts.7.gz
@@ -93,6 +93,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.7.2-1 -----
+Version bump.
 
 ----- version 0.7.1-1 -----
 Version bump.
