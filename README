@@ -7,18 +7,19 @@ COFF, Win32, and Win64 object formats, and generates source debugging
 information in STABS, DWARF 2, and CodeView 8 formats.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libintl8-0.17-1
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
+  libintl8-0.17-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-1
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.1-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  make-3.81-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical website:
@@ -76,14 +77,13 @@ Files included in the binary packages:
   /usr/include/libyasm/valparam.h
   /usr/include/libyasm/value.h
   /usr/lib/libyasm.a
-  /usr/share/doc/yasm-0.7.2/ABOUT-NLS
-  /usr/share/doc/yasm-0.7.2/AUTHORS
-  /usr/share/doc/yasm-0.7.2/Artistic.txt
-  /usr/share/doc/yasm-0.7.2/BSD.txt
-  /usr/share/doc/yasm-0.7.2/COPYING
-  /usr/share/doc/yasm-0.7.2/GNU_GPL-2.0
-  /usr/share/doc/yasm-0.7.2/GNU_LGPL-2.0
-  /usr/share/doc/yasm-0.7.2/INSTALL
+  /usr/share/doc/yasm/ABOUT-NLS
+  /usr/share/doc/yasm/AUTHORS
+  /usr/share/doc/yasm/Artistic.txt
+  /usr/share/doc/yasm/BSD.txt
+  /usr/share/doc/yasm/COPYING
+  /usr/share/doc/yasm/GNU_GPL-2.0
+  /usr/share/doc/yasm/GNU_LGPL-2.0
   /usr/share/man/man1/yasm.1.gz
   /usr/share/man/man7/yasm_arch.7.gz
   /usr/share/man/man7/yasm_dbgfmts.7.gz
@@ -94,23 +94,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 0.7.2-1 -----
-Version bump.
-
------ version 0.7.1-1 -----
-Version bump.
-
------ version 0.6.2-1 -----
-Version bump.
-
------ version 0.6.1-1 -----
-Version bump.
-
------ version 0.6.0-1 -----
-Version bump.
-
------ version 0.5.0-1 -----
-Initial release for Cygwin.
+----- version 0.7.2-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
