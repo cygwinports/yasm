@@ -1,5 +1,5 @@
 category: Devel
-requires: cygwin libgcc1 libintl8
+requires: libgcc1 libintl8
 sdesc: "Rewrite of NASM assembler"
 ldesc: "Yasm is a complete rewrite of the NASM assembler under the new BSD
 License. Yasm currently supports the x86 and AMD64 instruction sets,
