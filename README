@@ -7,16 +7,16 @@ COFF, Win32, and Win64 object formats, and generates source debugging
 information in STABS, DWARF 2, and CodeView 8 formats.
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-50
   libgcc1-4.3.2-2
-  libintl8-0.17-10
+  libintl8-0.17-11
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
-  binutils-20080624-2
-  cygport-0.9.6-1
+  automake1.10-1.10.2-10
+  binutils-2.19.51-1
+  cygport-0.9.7-1
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
   make-3.81-2
@@ -31,15 +31,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack yasm-0.7.2-X-src.tar.bz2
+  unpack yasm-0.8.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./yasm-0.7.2-X.cygport all
+  cygport ./yasm-0.8.0-X.cygport all
 
 This will create:
-  /usr/src/yasm-0.7.2-X-src.tar.bz2
-  /usr/src/yasm-0.7.2-X.tar.bz2
+  /usr/src/yasm-0.8.0-X-src.tar.bz2
+  /usr/src/yasm-0.8.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -47,6 +47,7 @@ Files included in the binary packages:
 
 (yasm)
   /usr/bin/yasm.exe
+  /usr/bin/ytasm.exe
   /usr/include/libyasm-stdint.h
   /usr/include/libyasm.h
   /usr/include/libyasm/arch.h
@@ -77,7 +78,6 @@ Files included in the binary packages:
   /usr/include/libyasm/valparam.h
   /usr/include/libyasm/value.h
   /usr/lib/libyasm.a
-  /usr/share/doc/yasm/ABOUT-NLS
   /usr/share/doc/yasm/AUTHORS
   /usr/share/doc/yasm/Artistic.txt
   /usr/share/doc/yasm/BSD.txt
@@ -93,6 +93,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.8.0-1 -----
+Version bump.
 
 ----- version 0.7.2-10 -----
 Initial release for Cygwin 1.7.
