@@ -1,8 +1,0 @@
-DESCRIPTION="Yasm Assembler"
-HOMEPAGE="http://www.tortall.net/projects/yasm/"
-SRC_URI="http://www.tortall.net/projects/yasm/releases/${P}.tar.gz"
-
-DOCS+=" Artistic.txt BSD.txt GNU_GPL-2.0 GNU_LGPL-2.0"
-
-# http://gcc.gnu.org/bugzilla/show_bug.cgi?id=37216
-CFLAGS+=" -fno-common"

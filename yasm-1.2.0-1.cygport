@@ -1,0 +1,13 @@
+CATEGORY="Devel"
+SUMMARY="Rewrite of NASM assembler"
+DESCRIPTION="Yasm is a complete rewrite of the NASM assembler under the new BSD
+License. Yasm currently supports the x86 and AMD64 instruction sets,
+accepts NASM and GAS assembler syntaxes, outputs binary, ELF32, ELF64,
+COFF, Win32, and Win64 object formats, and generates source debugging
+information in STABS, DWARF 2, and CodeView 8 formats."
+HOMEPAGE="http://www.tortall.net/projects/yasm/"
+SRC_URI="http://www.tortall.net/projects/yasm/releases/${P}.tar.gz"
+
+DIFF_EXCLUDES="YASM-VERSION*"
+
+DOCS+=" Artistic.txt BSD.txt GNU_GPL-2.0 GNU_LGPL-2.0"
