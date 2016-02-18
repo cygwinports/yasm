@@ -1,3 +1,6 @@
+NAME="yasm"
+VERSION=1.2.0
+RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Rewrite of NASM assembler"
 DESCRIPTION="Yasm is a complete rewrite of the NASM assembler under the new BSD
@@ -6,7 +9,7 @@ accepts NASM and GAS assembler syntaxes, outputs binary, ELF32, ELF64,
 COFF, Win32, and Win64 object formats, and generates source debugging
 information in STABS, DWARF 2, and CodeView 8 formats."
 HOMEPAGE="http://www.tortall.net/projects/yasm/"
-SRC_URI="http://www.tortall.net/projects/yasm/releases/${P}.tar.gz"
+SRC_URI="http://www.tortall.net/projects/yasm/releases/yasm-${VERSION}.tar.gz"
 
 DIFF_EXCLUDES="YASM-VERSION*"
 
